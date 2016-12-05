@@ -1,0 +1,163 @@
+#primary .box:nth-of-type(1), #generated .column:nth-of-type(1) .box {
+  background-color: gold; }
+
+#primary .box:nth-of-type(2), #generated .column:nth-of-type(2) .box {
+  background-color: teal; }
+
+#primary .box:nth-of-type(3), #generated .column:nth-of-type(3) .box {
+  background-color: purple; }
+
+#primary .box:nth-of-type(4), #generated .column:nth-of-type(4) .box {
+  background-color: lightgreen; }
+
+.body, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.row {
+  text-align: center; }
+
+.row:last-child:after {
+  width: 100%;
+  clear: both;
+  content: "";
+  display: table; }
+
+.box {
+  width: 200px;
+  height: 100px;
+  display: inline-block; }
+
+.column {
+  display: inline-block;
+  width: 200px; }
+
+.half-box {
+  height: 20px;
+  margin-top: 5px; }
+
+section {
+  margin-top: 2%; }
+
+h3 {
+  margin-bottom: 1%; }
+
+h2 {
+  margin-top: 2%; }
+
+#tints .box:nth-child(1) div:nth-child(1) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: #ffe86b; }
+#tints .box:nth-child(1) div:nth-child(2) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: gold; }
+#tints .box:nth-child(1) div:nth-child(3) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: #947d00; }
+
+#tints .box:nth-child(2) div:nth-child(1) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: #00ebeb; }
+#tints .box:nth-child(2) div:nth-child(2) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: teal; }
+#tints .box:nth-child(2) div:nth-child(3) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: #001515; }
+
+#tints .box:nth-child(3) div:nth-child(1) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: #eb00eb; }
+#tints .box:nth-child(3) div:nth-child(2) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: purple; }
+#tints .box:nth-child(3) div:nth-child(3) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: #150015; }
+
+#tints .box:nth-child(4) div:nth-child(1) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: #edfced; }
+#tints .box:nth-child(4) div:nth-child(2) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: lightgreen; }
+#tints .box:nth-child(4) div:nth-child(3) {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+  background-color: #33e033; }
+
+.row .column:nth-of-type(1) .half-box:nth-of-type(2) {
+  background-color: gold; }
+.row .column:nth-of-type(1) .half-box:nth-of-type(3) {
+  background-color: #a6b92d; }
+.row .column:nth-of-type(1) .half-box:nth-of-type(4) {
+  background-color: #d38c2d; }
+.row .column:nth-of-type(1) .half-box:nth-of-type(5) {
+  background-color: #d8df32; }
+
+.row .column:nth-of-type(2) .half-box:nth-of-type(2) {
+  background-color: #599e53; }
+.row .column:nth-of-type(2) .half-box:nth-of-type(3) {
+  background-color: teal; }
+.row .column:nth-of-type(2) .half-box:nth-of-type(4) {
+  background-color: #2d5380; }
+.row .column:nth-of-type(2) .half-box:nth-of-type(5) {
+  background-color: #32a786; }
+
+.row .column:nth-of-type(3) .half-box:nth-of-type(2) {
+  background-color: #ac4b53; }
+.row .column:nth-of-type(3) .half-box:nth-of-type(3) {
+  background-color: #532d80; }
+.row .column:nth-of-type(3) .half-box:nth-of-type(4) {
+  background-color: purple; }
+.row .column:nth-of-type(3) .half-box:nth-of-type(5) {
+  background-color: #865386; }
+
+.row .column:nth-of-type(4) .half-box:nth-of-type(2) {
+  background-color: #b7e65e; }
+.row .column:nth-of-type(4) .half-box:nth-of-type(3) {
+  background-color: #5ec88a; }
+.row .column:nth-of-type(4) .half-box:nth-of-type(4) {
+  background-color: #8a9b8a; }
+.row .column:nth-of-type(4) .half-box:nth-of-type(5) {
+  background-color: lightgreen; }
+
+#fonts h1 {
+  font-family: cursive; }
+#fonts p {
+  font-family: fantasy; }
+#fonts .letters span:nth-child(1) {
+  color: gold; }
+#fonts .letters span:nth-child(2) {
+  color: teal; }
+#fonts .letters span:nth-child(3) {
+  color: purple; }
+#fonts .letters span:nth-child(4) {
+  color: lightgreen; }
+
+/*# sourceMappingURL=styles.css.map */

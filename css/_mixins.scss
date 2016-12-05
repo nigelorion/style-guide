@@ -1,0 +1,45 @@
+@mixin reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin clearfix {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+@mixin box($size) {
+  width: $size * 2;
+  height: $size;
+  display: inline-block;
+}
+
+@mixin column($size) {
+    display: inline-block;
+    width: $size;
+}
+
+@mixin section {
+  height: 100%;
+  width: 33.333%;
+  float: left;
+}
+
+
+%color_background_1 {
+  background-color: $color_1;
+}
+
+%color_background_2 {
+  background-color: $color_2;
+}
+
+%color_background_3 {
+  background-color: $color_3;
+}
+
+%color_background_4 {
+  background-color: $color_4;
+}
