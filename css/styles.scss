@@ -107,65 +107,134 @@ h2 {
   }
 }
 
-.row .column:nth-of-type(1) {
-  .half-box:nth-of-type(2) {
-    background-color: mix($color_1, $color_1, 65%);
-  }
-  .half-box:nth-of-type(3) {
-    background-color: mix($color_1, $color_2, 65%);
-  }
-  .half-box:nth-of-type(4) {
-    background-color: mix($color_1, $color_3, 65%);
-  }
-  .half-box:nth-of-type(5) {
-    background-color: mix($color_1, $color_4, 65%);
+$colors: $color_1, $color_2, $color_3, $color_4;
+
+@for $i from 1 through 4 {
+  .row .column:nth-of-type(#{$i}) {
+    @for $j from 1 through length($colors) {
+      .half-box:nth-of-type(#{$j}) {
+        background-color: mix(nth($colors, $i), nth($colors, $j), 65%);
+      }
+    }
   }
 }
 
-.row .column:nth-of-type(2) {
-  .half-box:nth-of-type(2) {
-    background-color: mix($color_2, $color_1, 65%);
-  }
-  .half-box:nth-of-type(3) {
-    background-color: mix($color_2, $color_2, 65%);
-  }
-  .half-box:nth-of-type(4) {
-    background-color: mix($color_2, $color_3, 65%);
-  }
-  .half-box:nth-of-type(5) {
-    background-color: mix($color_2, $color_4, 65%);
-  }
-}
 
-.row .column:nth-of-type(3) {
-  .half-box:nth-of-type(2) {
-    background-color: mix($color_3, $color_1, 65%);
-  }
-  .half-box:nth-of-type(3) {
-    background-color: mix($color_3, $color_2, 65%);
-  }
-  .half-box:nth-of-type(4) {
-    background-color: mix($color_3, $color_3, 65%);
-  }
-  .half-box:nth-of-type(5) {
-    background-color: mix($color_3, $color_4, 65%);
-  }
-}
+// .row .column:nth-of-type(1)  {
+//   @for $i from 1 through length($colors)  {
+//     .half-box:nth-of-type(#{$i}) {
+//       background-color: mix($color_1, nth($colors, $i), 65%);
+//     }
+//   }
+// }
+//
+// .row .column:nth-of-type(2)  {
+//   @for $i from 1 through length($colors)  {
+//     .half-box:nth-of-type(#{$i}) {
+//       background-color: mix($color_2, nth($colors, $i), 65%);
+//     }
+//   }
+// }
+//
+// .row .column:nth-of-type(3)  {
+//   @for $i from 1 through length($colors)  {
+//     .half-box:nth-of-type(#{$i}) {
+//       background-color: mix($color_3, nth($colors, $i), 65%);
+//     }
+//   }
+// }
+//
+// .row .column:nth-of-type(4)  {
+//   @for $i from 1 through length($colors)  {
+//     .half-box:nth-of-type(#{$i}) {
+//       background-color: mix($color_4, nth($colors, $i), 65%);
+//     }
+//   }
+// }
 
-.row .column:nth-of-type(4) {
-  .half-box:nth-of-type(2) {
-    background-color: mix($color_4, $color_1, 65%);
-  }
-  .half-box:nth-of-type(3) {
-    background-color: mix($color_4, $color_2, 65%);
-  }
-  .half-box:nth-of-type(4) {
-    background-color: mix($color_4, $color_3, 65%);
-  }
-  .half-box:nth-of-type(5) {
-    background-color: mix($color_4, $color_4, 65%);
-  }
-}
+//
+// .row .column:nth-of-type(2) {
+//   @for $i from 2 through length($mix-colors) {
+//     .half-box:nth-of-type(#{$i}) {
+//       background-color: mix($color_2, $i, 65%);
+//     }
+//   }
+// }
+//
+// .row .column:nth-of-type(3) {
+//   @for $i from 2 through length($mix-colors) {
+//     .half-box:nth-of-type(#{$i}) {
+//       background-color: mix($color_3, $i, 65%);
+//     }
+//   }
+// }
+//
+// .row .column:nth-of-type(4) {
+//   @for $i from 2 through length($mix-colors) {
+//     .half-box:nth-of-type(#{$i}) {
+//       background-color: mix($color_4, $i, 65%);
+//     }
+//   }
+// }
+// .row .column:nth-of-type(1) {
+//   .half-box:nth-of-type(2) {
+//     background-color: mix($color_1, $color_1, 65%);
+//   }
+//   .half-box:nth-of-type(3) {
+//     background-color: mix($color_1, $color_2, 65%);
+//   }
+//   .half-box:nth-of-type(4) {
+//     background-color: mix($color_1, $color_3, 65%);
+//   }
+//   .half-box:nth-of-type(5) {
+//     background-color: mix($color_1, $color_4, 65%);
+//   }
+// }
+
+// .row .column:nth-of-type(2) {
+//   .half-box:nth-of-type(2) {
+//     background-color: mix($color_2, $color_1, 65%);
+//   }
+//   .half-box:nth-of-type(3) {
+//     background-color: mix($color_2, $color_2, 65%);
+//   }
+//   .half-box:nth-of-type(4) {
+//     background-color: mix($color_2, $color_3, 65%);
+//   }
+//   .half-box:nth-of-type(5) {
+//     background-color: mix($color_2, $color_4, 65%);
+//   }
+// }
+//
+// .row .column:nth-of-type(3) {
+//   .half-box:nth-of-type(2) {
+//     background-color: mix($color_3, $color_1, 65%);
+//   }
+//   .half-box:nth-of-type(3) {
+//     background-color: mix($color_3, $color_2, 65%);
+//   }
+//   .half-box:nth-of-type(4) {
+//     background-color: mix($color_3, $color_3, 65%);
+//   }
+//   .half-box:nth-of-type(5) {
+//     background-color: mix($color_3, $color_4, 65%);
+//   }
+// }
+//
+// .row .column:nth-of-type(4) {
+//   .half-box:nth-of-type(2) {
+//     background-color: mix($color_4, $color_1, 65%);
+//   }
+//   .half-box:nth-of-type(3) {
+//     background-color: mix($color_4, $color_2, 65%);
+//   }
+//   .half-box:nth-of-type(4) {
+//     background-color: mix($color_4, $color_3, 65%);
+//   }
+//   .half-box:nth-of-type(5) {
+//     background-color: mix($color_4, $color_4, 65%);
+//   }
+// }
 
 #fonts {
   h1 {
@@ -188,9 +257,5 @@ h2 {
     span:nth-child(4) {
       color: $color_4;
     }
-
   }
-
-
-
 }

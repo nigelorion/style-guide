@@ -111,40 +111,40 @@ h2 {
   float: left;
   background-color: #33e033; }
 
-.row .column:nth-of-type(1) .half-box:nth-of-type(2) {
+.row .column:nth-of-type(1) .half-box:nth-of-type(1) {
   background-color: gold; }
-.row .column:nth-of-type(1) .half-box:nth-of-type(3) {
+.row .column:nth-of-type(1) .half-box:nth-of-type(2) {
   background-color: #a6b92d; }
-.row .column:nth-of-type(1) .half-box:nth-of-type(4) {
+.row .column:nth-of-type(1) .half-box:nth-of-type(3) {
   background-color: #d38c2d; }
-.row .column:nth-of-type(1) .half-box:nth-of-type(5) {
+.row .column:nth-of-type(1) .half-box:nth-of-type(4) {
   background-color: #d8df32; }
 
-.row .column:nth-of-type(2) .half-box:nth-of-type(2) {
+.row .column:nth-of-type(2) .half-box:nth-of-type(1) {
   background-color: #599e53; }
-.row .column:nth-of-type(2) .half-box:nth-of-type(3) {
+.row .column:nth-of-type(2) .half-box:nth-of-type(2) {
   background-color: teal; }
-.row .column:nth-of-type(2) .half-box:nth-of-type(4) {
+.row .column:nth-of-type(2) .half-box:nth-of-type(3) {
   background-color: #2d5380; }
-.row .column:nth-of-type(2) .half-box:nth-of-type(5) {
+.row .column:nth-of-type(2) .half-box:nth-of-type(4) {
   background-color: #32a786; }
 
-.row .column:nth-of-type(3) .half-box:nth-of-type(2) {
+.row .column:nth-of-type(3) .half-box:nth-of-type(1) {
   background-color: #ac4b53; }
-.row .column:nth-of-type(3) .half-box:nth-of-type(3) {
+.row .column:nth-of-type(3) .half-box:nth-of-type(2) {
   background-color: #532d80; }
-.row .column:nth-of-type(3) .half-box:nth-of-type(4) {
+.row .column:nth-of-type(3) .half-box:nth-of-type(3) {
   background-color: purple; }
-.row .column:nth-of-type(3) .half-box:nth-of-type(5) {
+.row .column:nth-of-type(3) .half-box:nth-of-type(4) {
   background-color: #865386; }
 
-.row .column:nth-of-type(4) .half-box:nth-of-type(2) {
+.row .column:nth-of-type(4) .half-box:nth-of-type(1) {
   background-color: #b7e65e; }
-.row .column:nth-of-type(4) .half-box:nth-of-type(3) {
+.row .column:nth-of-type(4) .half-box:nth-of-type(2) {
   background-color: #5ec88a; }
-.row .column:nth-of-type(4) .half-box:nth-of-type(4) {
+.row .column:nth-of-type(4) .half-box:nth-of-type(3) {
   background-color: #8a9b8a; }
-.row .column:nth-of-type(4) .half-box:nth-of-type(5) {
+.row .column:nth-of-type(4) .half-box:nth-of-type(4) {
   background-color: lightgreen; }
 
 #fonts h1 {
