@@ -1,15 +1,3 @@
-#primary .box:nth-of-type(1), #generated .column:nth-of-type(1) .box {
-  background-color: #d79c2a; }
-
-#primary .box:nth-of-type(2), #generated .column:nth-of-type(2) .box {
-  background-color: #85acbe; }
-
-#primary .box:nth-of-type(3), #generated .column:nth-of-type(3) .box {
-  background-color: #e250fa; }
-
-#primary .box:nth-of-type(4), #generated .column:nth-of-type(4) .box {
-  background-color: #8bc667; }
-
 body {
   box-sizing: border-box;
   margin: 0;
@@ -43,6 +31,18 @@ h3 {
 .half-box {
   height: 20px;
   margin-top: 5px; }
+
+#primary .box:nth-of-type(1), #generated .column:nth-of-type(1) .box {
+  background-color: #d79c2a; }
+
+#primary .box:nth-of-type(2), #generated .column:nth-of-type(2) .box {
+  background-color: #85acbe; }
+
+#primary .box:nth-of-type(3), #generated .column:nth-of-type(3) .box {
+  background-color: #e250fa; }
+
+#primary .box:nth-of-type(4), #generated .column:nth-of-type(4) .box {
+  background-color: #8bc667; }
 
 #tints .box:nth-child(1) div:nth-child(1) {
   height: 100%;
