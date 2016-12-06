@@ -40,9 +40,6 @@ h3 {
   #primary .box:nth-of-type(#{$i}), #generated .column:nth-of-type(#{$i}) .box {
   background-color: nth($colors, $i);
   }
-}
-
-@for $i from 1 through 4 {
   #tints .box:nth-child(#{$i}) {
     div:nth-child(1){
       @include section;
@@ -57,9 +54,6 @@ h3 {
       background-color: darken(nth($colors, $i), 21%);
     }
   }
-}
-
-@for $i from 1 through length($colors) {
   .row .column:nth-of-type(#{$i}) {
     @for $j from 1 through length($colors) {
       .half-box:nth-of-type(#{$j}) {
@@ -68,6 +62,7 @@ h3 {
     }
   }
 }
+
 
 #fonts {
   h1 {
