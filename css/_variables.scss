@@ -1,7 +1,9 @@
-$color_1: gold;
-$color_2: teal;
-$color_3: purple;
-$color_4: lightgreen;
+$color_1: rgb(215, 156, 42);
+$color_2: rgb(133, 172, 190);
+$color_3: rgb(226, 80, 250);
+$color_4: rgb(139, 198, 103);
+
+$colors: $color_1, $color_2, $color_3, $color_4;
 
 $header_font: cursive;
 $body_font: fantasy;
